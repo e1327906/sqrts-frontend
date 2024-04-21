@@ -2,6 +2,7 @@ import axios, { AxiosError } from 'axios';
 import { UserLoginData, UserRegistrationData } from './types';
 
 const apiClient = axios.create({
+  //baseURL: 'http://eb-sqrts-env.eba-xhjknscv.ap-southeast-1.elasticbeanstalk.com/tg_query_api/api/v1/',
   baseURL: 'http://localhost:5500/tg_query_api/api/v1/',
   // add more default settings here
 });
@@ -18,8 +19,8 @@ export enum ApiMethod {
   GETUSERS = 'users/GetUsers',
   REFUNDTICKETS = 'tickets/RefundTickets',
   REFUND = 'payments/Refund',
-  CHANGEPASSWORD = 'users/ChangePassword',
-  
+  CHANGEPASSWORD = 'users/ChangePassword',  
+  FEEDBACK = 'general/Feedback',
   // Add more endpoints as needed
 }
 
