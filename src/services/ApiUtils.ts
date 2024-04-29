@@ -2,7 +2,7 @@ import axios, { AxiosError } from 'axios';
 import { UserLoginData, UserRegistrationData, FeedbackData } from './types';
 
 const apiClient = axios.create({
-  baseURL: 'http://eb-qrts-app-env.eba-rtij3ggm.ap-southeast-1.elasticbeanstalk.com/tg_query_api/api/v1/',
+  baseURL: 'http://eb-sqrts-env.eba-bq53g3td.ap-southeast-1.elasticbeanstalk.com/tg_query_api/api/v1/',
   //baseURL: 'http://localhost:5500/tg_query_api/api/v1/',
   // add more default settings here
 });
